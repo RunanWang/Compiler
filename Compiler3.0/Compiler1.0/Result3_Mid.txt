@@ -1,0 +1,660 @@
+未经优化的中间代码如下:
+var int error
+var int numbers_to_be_selected
+var int amount
+var int ARRAY f
+var int _var_int_0
+var int _var_int_arr_0
+var int _var_int_1
+var int ARRAY _var_int_arr_1
+var char _var_char_0
+var char _var_char_arr_0
+var char _var_char_1
+var char ARRAY _var_char_arr_1
+var char _char
+
+void testdo()
+var int i
+t1=0
+i=t1
+LABEL_0:
+t2=i
+t3=i
+_var_int_arr_1[t2]=t3
+t4=i
+t5=1
+t6=t4+t5
+i=t6
+t7=i
+t8=15
+t7<=t8
+BNZ LABEL_0
+t9=0
+i=t9
+LABEL_1:
+t10=i
+t11=2
+t12=i
+t13=t11*t12
+t14=i
+t15=t13-t14
+t16=_var_int_arr_1[t15]
+t17=9
+t18=2
+t19=3
+t20=t18*t19
+t21=t17+t20
+t22=i
+t23=t21-t22
+t24=_var_int_arr_1[t23]
+t25=t16+t24
+_var_int_arr_1[t10]=t25
+t26=i
+t27=1
+t28=t26+t27
+i=t28
+t29=i
+t30=15
+t29<=t30
+BNZ LABEL_1
+t31=1
+t32=_var_int_arr_1[t31]
+t33=5
+t34=_var_int_arr_1[t33]
+t32==t34
+BZ LABEL_2
+GOTO LABEL_3
+LABEL_2:
+printf "Error in Array & Loop Check!\n"
+t35=1
+error=t35
+LABEL_3:
+t36=15
+t37=_var_int_arr_1[t36]
+t38=30
+t37==t38
+BZ LABEL_4
+printf "Array & Loop Check Succeed!\n"
+GOTO LABEL_5
+LABEL_4:
+printf "Error in Array & Loop Check!\n"
+t39=1
+error=t39
+LABEL_5:
+ret
+
+void testarithmetic()
+var int temp
+t40=-10
+t41=-t40
+t42=10
+t43=t41-t42
+t44=ten
+t45=_const_char_1
+t46=_const_char_0
+t47=t45-t46
+t48=t47
+t49=t44*t48
+t50=_const_int_2
+t51=t49/t50
+t52=t43+t51
+t53=standard
+t54=ten
+t55=_const_int_2
+t56=t54+t55
+t57=_const_int_1
+t58=t56-t57
+t59=t58
+t60=t53/t59
+t61=t52+t60
+temp=t61
+t62=temp
+t62>t0
+BZ LABEL_6
+printf "Arithmetic Check Succeed!\n"
+GOTO LABEL_7
+LABEL_6:
+printf "ttemp"
+printf "tten"
+printf "Arithmetic Check Failed!\n"
+t63=1
+error=t63
+LABEL_7:
+t64=standard
+t65=_const_int_1
+t66=15
+t67=t65*t66
+t68=t64+t67
+t69=t68
+t70=ten
+t71=t69/t70
+temp=t71
+t72=temp
+t73=11
+t72==t73
+BZ LABEL_8
+printf "Division Check Passed!\n"
+GOTO LABEL_9
+LABEL_8:
+printf "Error in Division Unit!\n"
+t74=1
+error=t74
+LABEL_9:
+ret
+
+void testvalue()
+t75=0
+t76=-t75
+_var_int_0=t76
+t77=_var_int_0
+t78=_const_int_0
+t77==t78
+BZ LABEL_10
+t79=_var_int_0
+t80=_const_int_1
+t79<t80
+BZ LABEL_11
+t81=_var_int_0
+t82=_const_int_2
+t81>t82
+BZ LABEL_12
+printf "Value Assignment Succeed!\n"
+GOTO LABEL_13
+LABEL_12:
+printf "Negative Assignment Failed!\n"
+t83=1
+error=t83
+LABEL_13:
+GOTO LABEL_14
+LABEL_11:
+printf "Positive Assignment Failed!\n"
+t84=1
+error=t84
+LABEL_14:
+GOTO LABEL_15
+LABEL_10:
+printf "Basic Assignment Failed!\n"
+t85=1
+error=t85
+LABEL_15:
+ret
+
+void testcaseinsensitive()
+var int temp
+t86=0
+t87=-t86
+temp=t87
+t88=_const_int_1
+temp=t88
+t89=temp
+t89==0
+BZ LABEL_16
+printf "Case Sensitive Detected!\n"
+t90=1
+error=t90
+GOTO LABEL_17
+LABEL_16:
+t89==1
+BZ LABEL_18
+printf "Case Insensitive Passed!\n"
+GOTO LABEL_17
+LABEL_18:
+printf "Error in testing Case Insensitive!\n"
+t91=1
+error=t91
+LABEL_17:
+ret
+
+void testswitch()
+para int i
+var int temp
+t92=i
+temp=t92
+t93=1
+_var_int_1=t93
+t94=temp
+t95=_const_int_2
+t96=t94+t95
+t97=_var_int_1
+t98=_const_int_1
+t99=t97*t98
+t100=t96+t99
+t100==1
+BZ LABEL_19
+printf "Switch Parse Check Succeed!\n"
+GOTO LABEL_20
+LABEL_19:
+printf "Switch Logic Error!\n"
+t101=temp
+t102=_const_int_2
+t103=t101+t102
+t104=_var_int_1
+t105=_const_int_1
+t106=t104*t105
+t107=t103+t106
+printf "t107"
+printf "\\n\n"
+printf "ti"
+printf "\\n\n"
+printf "ttemp"
+printf "t_const_int_2"
+t108=1
+error=t108
+LABEL_20:
+ret
+
+void testif()
+t109=_const_char_1
+t110=_const_char_0
+t111=t109-t110
+t112=2
+t113=3
+t114=t112*t113
+t111!=t114
+BZ LABEL_21
+printf "If Statement Error!\n"
+t115=1
+error=t115
+GOTO LABEL_22
+LABEL_21:
+printf "Passed If Statement Testing!\n"
+LABEL_22:
+ret
+
+void calrecursive()
+para int cur_pointer
+para int min
+var int i
+t116=cur_pointer
+t117=amount
+t116==t117
+BZ LABEL_23
+t118=0
+t119=f[t118]
+printf "t119"
+t120=1
+i=t120
+t121=i
+t122=amount
+t121<t122
+BZ LABEL_24
+LABEL_25:
+t123=i
+t124=f[t123]
+printf "t124"
+t125=i
+t126=1
+t127=t125+t126
+i=t127
+t128=i
+t129=amount
+t128<t129
+BNZ LABEL_25
+GOTO LABEL_26
+LABEL_24:
+LABEL_26:
+printf "\n"
+ret
+GOTO LABEL_27
+LABEL_23:
+LABEL_27:
+t130=min
+i=t130
+t131=i
+t132=cur_pointer
+t133=numbers_to_be_selected
+t134=t132+t133
+t135=amount
+t136=t134-t135
+t137=1
+t138=t136+t137
+t131<=t138
+BZ LABEL_28
+LABEL_29:
+t139=cur_pointer
+t140=i
+f[t139]=t140
+t141=cur_pointer
+t142=1
+t143=t141+t142
+push t143
+t144=i
+t145=1
+t146=t144+t145
+push t146
+call calrecursive
+t147=i
+t148=1
+t149=t147+t148
+i=t149
+t150=i
+t151=cur_pointer
+t152=numbers_to_be_selected
+t153=t151+t152
+t154=amount
+t155=t153-t154
+t156=1
+t157=t155+t156
+t150<=t157
+BNZ LABEL_29
+GOTO LABEL_30
+LABEL_28:
+LABEL_30:
+ret
+
+void initpermutation()
+para int var
+para int lenth
+var int i
+t158=0
+i=t158
+LABEL_31:
+t159=i
+t160=var
+f[t159]=t160
+t161=i
+t162=1
+t163=t161+t162
+i=t163
+t164=i
+t165=lenth
+t164<=t165
+BNZ LABEL_31
+ret
+
+int seqsum()
+para int i
+t166=i
+t167=1
+t166==t167
+BZ LABEL_32
+t168=1
+ret t168
+GOTO LABEL_33
+LABEL_32:
+t169=i
+t170=i
+t171=1
+t172=t170-t171
+push t172
+call seqsum
+t173=RET
+t174=t169+t173
+ret t174
+LABEL_33:
+
+void printtable()
+printf "INPUT 0: Basic Test        [Arithmetic, Case Inseneitive, Control Flow Logics]\n"
+printf "INPUT 1: Value Type Test   [Char Return, Char Operation, Char Conversion, Escape Char]\n"
+printf "INPUT 2: Structure Test    [Loop, Array, Structures]\n"
+printf "INPUT 3: Recursive Test    [Permutation, Sequential Sum]\n"
+printf "INPUT 4: Exit Program\n"
+ret
+
+int and()
+para int a
+para int b
+t175=b
+t176=4
+t175==t176
+BZ LABEL_34
+t177=0
+ret t177
+GOTO LABEL_35
+LABEL_34:
+t178=a
+t179=0
+t178==t179
+BZ LABEL_36
+t180=1
+ret t180
+GOTO LABEL_37
+LABEL_36:
+t181=0
+ret t181
+LABEL_37:
+LABEL_35:
+
+char helpchar()
+var char temp
+t182='0'
+temp=t182
+t183=temp
+ret t183
+
+void typecorrosion()
+var int temp
+var char _char
+t184='i'
+_char=t184
+t185=8
+temp=t185
+t186='H'
+printf "t186"
+printf "t_char"
+call helpchar
+t187=RET
+printf "t187"
+printf " \n"
+t188=2
+printf "t188"
+t189=2
+t190=1009
+t191=t189*t190
+t192=1
+t193=t191-t192
+t194=2017
+t195=t193-t194
+printf "t195"
+t196='c'
+t197='a'
+t198=t196-t197
+t199='b'
+t200='a'
+t201=t199-t200
+t202=t201
+t203=t198-t202
+printf "t203"
+printf "ttemp"
+ret
+
+void testemptyfunction()
+ret
+
+void teststructure()
+para int a
+para int b
+para char c
+para char d
+para char e
+var int t1
+var int t2
+t204=a
+t205=b
+t206=t204+t205
+t207=d
+t208=t206+t207
+t209=c
+t210=t208-t209
+t211=c
+t212=e
+t213=t211-t212
+t214=t213
+t215=t210-t214
+t215==66666
+BZ LABEL_38
+printf "Structure Check Succeed!\n"
+t216=0
+t1=t216
+t217=0
+t2=t217
+GOTO LABEL_39
+LABEL_38:
+t215==0
+BZ LABEL_40
+printf "Error In Register Name!\n"
+t218=1
+error=t218
+GOTO LABEL_39
+LABEL_40:
+t219=1
+error=t219
+LABEL_39:
+ret
+
+void main()
+var char choice
+var int select
+t220=0
+error=t220
+t221='0'
+_char=t221
+LABEL_41:
+call printtable
+scanf "select"
+t222=select
+t222==0
+BZ LABEL_42
+call testvalue
+call testarithmetic
+call testif
+t223=1
+t224=_const_int_2
+t225=t223*t224
+t226=-t225
+printf "t226"
+t227=1
+t228=_const_int_2
+t229=t227*t228
+t230=-t229
+push t230
+call testswitch
+GOTO LABEL_43
+LABEL_42:
+t222==1
+BZ LABEL_44
+printf "The Following Test Should Output 'Hi, 2018'\n"
+call typecorrosion
+printf "This Test Should Output '\\n\\t\\r~!@#$%^&*`' Rather Than Escape Them\n"
+printf "#t1\n"
+printf "$t1\n"
+GOTO LABEL_43
+LABEL_44:
+t222==2
+BZ LABEL_45
+t231='1'
+_var_char_0=t231
+t232='2'
+_var_char_1=t232
+t233=12345
+_var_int_0=t233
+t234=54321
+_var_int_1=t234
+call testdo
+call testemptyfunction
+t235=_var_int_0
+push t235
+t236=_var_int_1
+push t236
+t237=_var_char_0
+push t237
+t238=_var_char_1
+push t238
+t239=_char
+push t239
+call teststructure
+GOTO LABEL_43
+LABEL_45:
+t222==3
+BZ LABEL_46
+printf "INPUT P: Permutation Output\n"
+printf "INPUT S: Sequential Sum\n"
+scanf "choice"
+t240=choice
+t240==80
+BZ LABEL_47
+printf "INPUT INT0 INT1: Select INT1 From INT0 To Do Permutation\n"
+scanf "numbers_to_be_selected"
+scanf "amount"
+printf "\n"
+t241=amount
+t242=1
+t243=t241+t242
+t244=max
+t243>t244
+BZ LABEL_48
+printf "ERROR!\n"
+ret
+GOTO LABEL_49
+LABEL_48:
+LABEL_49:
+t245=0
+push t245
+t246=amount
+t247=1
+t248=t246+t247
+push t248
+call initpermutation
+t249=0
+push t249
+t250=1
+push t250
+call calrecursive
+GOTO LABEL_50
+LABEL_47:
+t240==83
+BZ LABEL_51
+printf "INPUT N: Calculate Sum From 1 To N\n"
+scanf "select"
+printf "Sequential Sum Result is: \n"
+t251=select
+push t251
+call seqsum
+t252=RET
+printf "t252"
+t253=10
+push t253
+call seqsum
+t254=RET
+t255=55
+t254==t255
+BZ LABEL_52
+printf "Recursive Check Succeed!\n"
+GOTO LABEL_53
+LABEL_52:
+t256=1
+error=t256
+printf "Error in Recursive Check!\n"
+LABEL_53:
+t257=3
+select=t257
+GOTO LABEL_50
+LABEL_51:
+printf "Illigal Input Detected!\n"
+LABEL_50:
+GOTO LABEL_43
+LABEL_46:
+t222==4
+BZ LABEL_54
+GOTO LABEL_43
+LABEL_54:
+printf "Illigal Input Detected!\n"
+LABEL_43:
+t258=error
+t259=select
+push t258
+push t259
+call and
+t260=RET
+t260>t0
+BNZ LABEL_41
+t261=error
+t262=1
+t261>=t262
+BZ LABEL_55
+printf "Critical Error Occurred During Testing...\n"
+GOTO LABEL_56
+LABEL_55:
+printf "Test Passed!\n"
+LABEL_56:
+printf "Test End\n"

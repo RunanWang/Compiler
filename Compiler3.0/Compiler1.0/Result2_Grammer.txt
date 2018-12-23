@@ -1,0 +1,424 @@
+This is a constant: _const_int_0
+This is a constant: _const_int_1
+This is a constant: _const_int_2
+This is a constant: _const_char_0
+This is a constant: _const_char_1
+This is a constant: max
+This is a Var: error
+This is a Var: numbers_to_be_selected
+This is a Var: amount
+This is a ArrayVar: f
+This is a Var: _var_int_0
+This is a ArrayVar: _var_int_arr_0
+This is a Var: _var_int_1
+This is a ArrayVar: _var_int_arr_1
+This is a Var: _var_char_0
+This is a ArrayVar: _var_char_arr_0
+This is a Var: _var_char_1
+This is a ArrayVar: _var_char_arr_1
+This is a Var: _char
+
+This below is a no return function:testdo.
+This is a Var: i
+This is a assign statement.i=
+This is an int factor: 0This is a do statement.
+This is a statements list statement.
+This is a assign statement._var_int_arr_1[]=
+This is a factor:i.This is a factor:i.This is a assign statement.i=
+This is a factor:i.This is an int factor: 1These terms above are a Expression.
+This is a while statement.
+This is a factor:i.This is an int factor: 15This is a condition.
+This is a ; statement.
+This is a assign statement.i=
+This is an int factor: 0This is a do statement.
+This is a statements list statement.
+This is a assign statement._var_int_arr_1[]=
+This is a factor:i.This is an int factor: 2This is a factor:i.These factors above is a term * or / .This is a factor:i.These terms above are a Expression.
+This is an array factor:_var_int_arr_1[].This is an int factor: 9This is an int factor: 2This is an int factor: 3These factors above is a term * or / .This is a factor:i.These terms above are a Expression.
+This is an array factor:_var_int_arr_1[].These terms above are a Expression.
+This is a assign statement.i=
+This is a factor:i.This is an int factor: 1These terms above are a Expression.
+This is a while statement.
+This is a factor:i.This is an int factor: 15This is a condition.
+This is a ; statement.
+This is a if statement.
+This is an int factor: 1This is an array factor:_var_int_arr_1[].This is an int factor: 5This is an array factor:_var_int_arr_1[].This is a condition.
+This is a ; statement.
+This is a else statement.
+This is a statements list statement.
+This is a printf statement.
+This is a assign statement.error=
+This is an int factor: 1This is a if statement.
+This is an int factor: 15This is an array factor:_var_int_arr_1[].This is an int factor: 30This is a condition.
+This is a printf statement.
+This is a else statement.
+This is a statements list statement.
+This is a printf statement.
+This is a assign statement.error=
+This is an int factor: 1This is a return statement.
+
+This below is a no return function:testarithmetic.
+This is a constant: standard
+This is a constant: ten
+This is a Var: temp
+This is a assign statement.temp=
+This is an int factor: -10This is an int factor: 10This is a factor:ten.This is a factor:_const_char_1.This is a factor:_const_char_0.These terms above are a Expression.
+This is an expression factor.This is a factor:_const_int_2.These factors above is a term * or / .This is a factor:standard.This is a factor:ten.This is a factor:_const_int_2.This is a factor:_const_int_1.These terms above are a Expression.
+This is an expression factor.These factors above is a term * or / .These terms above are a Expression.
+This is a if statement.
+This is a factor:temp.This is a condition.
+This is a printf statement.
+This is a else statement.
+This is a statements list statement.
+This is a printf statement.
+This is a printf statement.
+This is a printf statement.
+This is a assign statement.error=
+This is an int factor: 1This is a assign statement.temp=
+This is a factor:standard.This is a factor:_const_int_1.This is an int factor: 15These factors above is a term * or / .These terms above are a Expression.
+This is an expression factor.This is a factor:ten.These factors above is a term * or / .This is a if statement.
+This is a factor:temp.This is an int factor: 11This is a condition.
+This is a printf statement.
+This is a else statement.
+This is a statements list statement.
+This is a printf statement.
+This is a assign statement.error=
+This is an int factor: 1This is a return statement.
+
+This below is a no return function:testvalue.
+This is a assign statement._var_int_0=
+This is an int factor: 0This is a if statement.
+This is a factor:_var_int_0.This is a factor:_const_int_0.This is a condition.
+This is a if statement.
+This is a factor:_var_int_0.This is a factor:_const_int_1.This is a condition.
+This is a if statement.
+This is a factor:_var_int_0.This is a factor:_const_int_2.This is a condition.
+This is a printf statement.
+This is a else statement.
+This is a statements list statement.
+This is a printf statement.
+This is a assign statement.error=
+This is an int factor: 1This is a else statement.
+This is a statements list statement.
+This is a printf statement.
+This is a assign statement.error=
+This is an int factor: 1This is a else statement.
+This is a statements list statement.
+This is a printf statement.
+This is a assign statement.error=
+This is an int factor: 1This is a return statement.
+
+This below is a no return function:testcaseinsensitive.
+This is a Var: temp
+This is a assign statement.temp=
+This is an int factor: 0This is a assign statement.temp=
+This is a factor:_const_int_1.This is a switch statement.
+This is a factor:temp.This is a case statement.
+This is a statements list statement.
+This is a printf statement.
+This is a assign statement.error=
+This is an int factor: 1This is a case statement.
+This is a printf statement.
+This is a default statement.
+This is a statements list statement.
+This is a printf statement.
+This is a assign statement.error=
+This is an int factor: 1This is a return statement.
+
+This below is a no return function:testswitch.
+This is a Parameter: i.
+This is a Var: temp
+This is a assign statement.temp=
+This is a factor:i.This is a assign statement._var_int_1=
+This is an int factor: 1This is a switch statement.
+This is a factor:temp.This is a factor:_const_int_2.This is a factor:_var_int_1.This is a factor:_const_int_1.These factors above is a term * or / .These terms above are a Expression.
+This is a case statement.
+This is a statements list statement.
+This is a printf statement.
+This is a default statement.
+This is a statements list statement.
+This is a printf statement.
+This is a printf statement.
+This is a factor:temp.This is a factor:_const_int_2.This is a factor:_var_int_1.This is a factor:_const_int_1.These factors above is a term * or / .These terms above are a Expression.
+This is a printf statement.
+This is a printf statement.
+This is a printf statement.
+This is a assign statement.error=
+This is an int factor: 1This is a return statement.
+
+This below is a no return function:testif.
+This is a if statement.
+This is a factor:_const_char_1.This is a factor:_const_char_0.These terms above are a Expression.
+This is an int factor: 2This is an int factor: 3These factors above is a term * or / .This is a condition.
+This is a statements list statement.
+This is a printf statement.
+This is a assign statement.error=
+This is an int factor: 1This is a else statement.
+This is a printf statement.
+This is a return statement.
+
+This below is a no return function:calrecursive.
+This is a Parameter: cur_pointer.
+This is a Parameter: min.
+This is a Var: i
+This is a if statement.
+This is a factor:cur_pointer.This is a factor:amount.This is a condition.
+This is a statements list statement.
+This is a printf statement.
+This is an int factor: 0This is an array factor:f[].This is a assign statement.i=
+This is an int factor: 1This is a if statement.
+This is a factor:i.This is a factor:amount.This is a condition.
+This is a do statement.
+This is a statements list statement.
+This is a printf statement.
+This is a factor:i.This is an array factor:f[].This is a assign statement.i=
+This is a factor:i.This is an int factor: 1These terms above are a Expression.
+This is a while statement.
+This is a factor:i.This is a factor:amount.This is a condition.
+This is a else statement.
+This is a ; statement.
+This is a printf statement.
+This is a return statement.
+This is a else statement.
+This is a ; statement.
+This is a assign statement.i=
+This is a factor:min.This is a if statement.
+This is a factor:i.This is a factor:cur_pointer.This is a factor:numbers_to_be_selected.This is a factor:amount.This is an int factor: 1These terms above are a Expression.
+This is a condition.
+This is a do statement.
+This is a statements list statement.
+This is a assign statement.f[]=
+This is a factor:cur_pointer.This is a factor:i.This is a function call statement.
+This is a factor:cur_pointer.This is an int factor: 1These terms above are a Expression.
+This is a factor:i.This is an int factor: 1These terms above are a Expression.
+This is a call.
+This is a assign statement.i=
+This is a factor:i.This is an int factor: 1These terms above are a Expression.
+This is a while statement.
+This is a factor:i.This is a factor:cur_pointer.This is a factor:numbers_to_be_selected.This is a factor:amount.This is an int factor: 1These terms above are a Expression.
+This is a condition.
+This is a else statement.
+This is a ; statement.
+This is a return statement.
+
+This below is a no return function:initpermutation.
+This is a Parameter: var.
+This is a Parameter: lenth.
+This is a Var: i
+This is a assign statement.i=
+This is an int factor: 0This is a do statement.
+This is a statements list statement.
+This is a assign statement.f[]=
+This is a factor:i.This is a factor:var.This is a assign statement.i=
+This is a factor:i.This is an int factor: 1These terms above are a Expression.
+This is a while statement.
+This is a factor:i.This is a factor:lenth.This is a condition.
+This is a return statement.
+
+This below is a return function:seqsum.
+This is a Parameter: i.
+This is a if statement.
+This is a factor:i.This is an int factor: 1This is a condition.
+This is a return statement.
+This is an int factor: 1This is a else statement.
+This is a return statement.
+This is a factor:i.This is a factor:i.This is an int factor: 1These terms above are a Expression.
+This is a call.
+This is a return function factor:seqsum.These terms above are a Expression.
+
+This below is a no return function:printtable.
+This is a printf statement.
+This is a printf statement.
+This is a printf statement.
+This is a printf statement.
+This is a printf statement.
+This is a return statement.
+
+This below is a return function:and.
+This is a Parameter: a.
+This is a Parameter: b.
+This is a if statement.
+This is a factor:b.This is an int factor: 4This is a condition.
+This is a return statement.
+This is an int factor: 0This is a else statement.
+This is a if statement.
+This is a factor:a.This is an int factor: 0This is a condition.
+This is a return statement.
+This is an int factor: 1This is a else statement.
+This is a return statement.
+This is an int factor: 0
+This below is a return function:helpchar.
+This is a Var: temp
+This is a assign statement.temp=
+This is a char factor: 0This is a return statement.
+This is a factor:temp.
+This below is a no return function:typecorrosion.
+This is a Var: temp
+This is a Var: _char
+This is a assign statement._char=
+This is a char factor: iThis is a assign statement.temp=
+This is an int factor: 8This is a printf statement.
+This is a char factor: HThis is a printf statement.
+This is a printf statement.
+This is a return function factor:helpchar.This is a call.
+This is a printf statement.
+This is a printf statement.
+This is an int factor: 2This is a printf statement.
+This is an int factor: 2This is an int factor: 1009These factors above is a term * or / .This is an int factor: 1This is an int factor: 2017These terms above are a Expression.
+This is a printf statement.
+This is a char factor: cThis is a char factor: aThis is a char factor: bThis is a char factor: aThese terms above are a Expression.
+This is an expression factor.These terms above are a Expression.
+This is a printf statement.
+This is a return statement.
+
+This below is a no return function:testemptyfunction.
+This is a statements list statement.
+This is a return statement.
+
+This below is a no return function:teststructure.
+This is a Parameter: a.
+This is a Parameter: b.
+This is a Parameter: c.
+This is a Parameter: d.
+This is a Parameter: e.
+This is a Var: t1
+This is a Var: t2
+This is a statements list statement.
+This is a statements list statement.
+This is a statements list statement.
+This is a statements list statement.
+This is a statements list statement.
+This is a statements list statement.
+This is a statements list statement.
+This is a statements list statement.
+This is a statements list statement.
+This is a statements list statement.
+This is a statements list statement.
+This is a statements list statement.
+This is a switch statement.
+This is a factor:a.This is a factor:b.This is a factor:d.This is a factor:c.This is a factor:c.This is a factor:e.These terms above are a Expression.
+This is an expression factor.These terms above are a Expression.
+This is a case statement.
+This is a statements list statement.
+This is a printf statement.
+This is a assign statement.t1=
+This is an int factor: 0This is a assign statement.t2=
+This is an int factor: 0This is a case statement.
+This is a statements list statement.
+This is a printf statement.
+This is a assign statement.error=
+This is an int factor: 1This is a default statement.
+This is a assign statement.error=
+This is an int factor: 1This is a statements list statement.
+This is a ; statement.
+This is a statements list statement.
+This is a ; statement.
+This is a statements list statement.
+This is a ; statement.
+This is a ; statement.
+This is a ; statement.
+This is a ; statement.
+This is a ; statement.
+This is a return statement.
+
+
+This is the main function.
+This is a Var: choice
+This is a Var: select
+This is a assign statement.error=
+This is an int factor: 0This is a assign statement._char=
+This is a char factor: 0This is a do statement.
+This is a statements list statement.
+This is a function call statement.
+This is a call.
+This is a scanf statement.
+This is a switch statement.
+This is a factor:select.This is a case statement.
+This is a statements list statement.
+This is a function call statement.
+This is a call.
+This is a function call statement.
+This is a call.
+This is a function call statement.
+This is a call.
+This is a printf statement.
+This is an int factor: 1This is a factor:_const_int_2.These factors above is a term * or / .This is a function call statement.
+This is an int factor: 1This is a factor:_const_int_2.These factors above is a term * or / .This is a call.
+This is a case statement.
+This is a statements list statement.
+This is a printf statement.
+This is a function call statement.
+This is a call.
+This is a printf statement.
+This is a printf statement.
+This is a printf statement.
+This is a case statement.
+This is a statements list statement.
+This is a assign statement._var_char_0=
+This is a char factor: 1This is a assign statement._var_char_1=
+This is a char factor: 2This is a assign statement._var_int_0=
+This is an int factor: 12345This is a assign statement._var_int_1=
+This is an int factor: 54321This is a function call statement.
+This is a call.
+This is a function call statement.
+This is a call.
+This is a function call statement.
+This is a factor:_var_int_0.This is a factor:_var_int_1.This is a factor:_var_char_0.This is a factor:_var_char_1.This is a factor:_char.This is a call.
+This is a case statement.
+This is a statements list statement.
+This is a printf statement.
+This is a printf statement.
+This is a scanf statement.
+This is a switch statement.
+This is a factor:choice.This is a case statement.
+This is a statements list statement.
+This is a printf statement.
+This is a scanf statement.
+This is a printf statement.
+This is a if statement.
+This is a factor:amount.This is an int factor: 1These terms above are a Expression.
+This is a factor:max.This is a condition.
+This is a statements list statement.
+This is a printf statement.
+This is a return statement.
+This is a else statement.
+This is a ; statement.
+This is a function call statement.
+This is an int factor: 0This is a factor:amount.This is an int factor: 1These terms above are a Expression.
+This is a call.
+This is a function call statement.
+This is an int factor: 0This is an int factor: 1This is a call.
+This is a case statement.
+This is a statements list statement.
+This is a printf statement.
+This is a scanf statement.
+This is a printf statement.
+This is a return function factor:seqsum.This is a factor:select.This is a call.
+This is a if statement.
+This is a return function factor:seqsum.This is an int factor: 10This is a call.
+This is an int factor: 55This is a condition.
+This is a printf statement.
+This is a else statement.
+This is a statements list statement.
+This is a assign statement.error=
+This is an int factor: 1This is a printf statement.
+This is a assign statement.select=
+This is an int factor: 3This is a default statement.
+This is a printf statement.
+This is a case statement.
+This is a ; statement.
+This is a default statement.
+This is a printf statement.
+This is a while statement.
+This is a return function factor:and.This is a factor:error.This is a factor:select.This is a call.
+This is a condition.
+This is a ; statement.
+This is a if statement.
+This is a factor:error.This is an int factor: 1This is a condition.
+This is a printf statement.
+This is a else statement.
+This is a printf statement.
+This is a printf statement.
+This is a program.
+Congratulations!
+Grammer Analyze Complete!

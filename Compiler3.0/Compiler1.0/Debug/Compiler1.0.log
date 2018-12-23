@@ -1,0 +1,41 @@
+﻿  GrammarAnalyze.c
+c:\users\ryan\desktop\compiler2.3-当前讨论区bug清除+错误处理\compiler1.0\grammaranalyze.c(39): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\string.h(129): note: 参见“strcpy”的声明
+c:\users\ryan\desktop\compiler2.3-当前讨论区bug清除+错误处理\compiler1.0\grammaranalyze.c(65): warning C4013: “GrConstant”未定义；假设外部返回 int
+c:\users\ryan\desktop\compiler2.3-当前讨论区bug清除+错误处理\compiler1.0\grammaranalyze.c(69): warning C4013: “GrVar”未定义；假设外部返回 int
+c:\users\ryan\desktop\compiler2.3-当前讨论区bug清除+错误处理\compiler1.0\grammaranalyze.c(80): warning C4013: “GrNoRetFun”未定义；假设外部返回 int
+c:\users\ryan\desktop\compiler2.3-当前讨论区bug清除+错误处理\compiler1.0\grammaranalyze.c(83): warning C4013: “GrRetFun”未定义；假设外部返回 int
+c:\users\ryan\desktop\compiler2.3-当前讨论区bug清除+错误处理\compiler1.0\grammaranalyze.c(88): warning C4013: “GrMainFun”未定义；假设外部返回 int
+c:\users\ryan\desktop\compiler2.3-当前讨论区bug清除+错误处理\compiler1.0\grammaranalyze.c(144): warning C4013: “GrInteger”未定义；假设外部返回 int
+c:\users\ryan\desktop\compiler2.3-当前讨论区bug清除+错误处理\compiler1.0\grammaranalyze.c(260): warning C4013: “GrParaList”未定义；假设外部返回 int
+c:\users\ryan\desktop\compiler2.3-当前讨论区bug清除+错误处理\compiler1.0\grammaranalyze.c(274): warning C4013: “GrCompoundStat”未定义；假设外部返回 int
+c:\users\ryan\desktop\compiler2.3-当前讨论区bug清除+错误处理\compiler1.0\grammaranalyze.c(251): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\string.h(129): note: 参见“strcpy”的声明
+c:\users\ryan\desktop\compiler2.3-当前讨论区bug清除+错误处理\compiler1.0\grammaranalyze.c(295): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\string.h(129): note: 参见“strcpy”的声明
+c:\users\ryan\desktop\compiler2.3-当前讨论区bug清除+错误处理\compiler1.0\grammaranalyze.c(359): warning C4013: “GrStatement”未定义；假设外部返回 int
+c:\users\ryan\desktop\compiler2.3-当前讨论区bug清除+错误处理\compiler1.0\grammaranalyze.c(436): warning C4013: “GrExp”未定义；假设外部返回 int
+c:\users\ryan\desktop\compiler2.3-当前讨论区bug清除+错误处理\compiler1.0\grammaranalyze.c(465): warning C4013: “GrRetCall”未定义；假设外部返回 int
+c:\users\ryan\desktop\compiler2.3-当前讨论区bug清除+错误处理\compiler1.0\grammaranalyze.c(640): warning C4013: “GrCondition”未定义；假设外部返回 int
+c:\users\ryan\desktop\compiler2.3-当前讨论区bug清除+错误处理\compiler1.0\grammaranalyze.c(791): warning C4013: “GrNoRetCall”未定义；假设外部返回 int
+c:\users\ryan\desktop\compiler2.3-当前讨论区bug清除+错误处理\compiler1.0\grammaranalyze.c(810): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\string.h(129): note: 参见“strcpy”的声明
+c:\users\ryan\desktop\compiler2.3-当前讨论区bug清除+错误处理\compiler1.0\grammaranalyze.c(827): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\string.h(129): note: 参见“strcpy”的声明
+c:\users\ryan\desktop\compiler2.3-当前讨论区bug清除+错误处理\compiler1.0\grammaranalyze.c(899): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\string.h(129): note: 参见“strcpy”的声明
+c:\users\ryan\desktop\compiler2.3-当前讨论区bug清除+错误处理\compiler1.0\grammaranalyze.c(917): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\string.h(129): note: 参见“strcpy”的声明
+c:\users\ryan\desktop\compiler2.3-当前讨论区bug清除+错误处理\compiler1.0\grammaranalyze.c(1229): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\stdio.h(207): note: 参见“fopen”的声明
+c:\users\ryan\desktop\compiler2.3-当前讨论区bug清除+错误处理\compiler1.0\grammaranalyze.c(167): warning C4716: “GrConstant”: 必须返回一个值
+c:\users\ryan\desktop\compiler2.3-当前讨论区bug清除+错误处理\compiler1.0\grammaranalyze.c(239): warning C4716: “GrVar”: 必须返回一个值
+c:\users\ryan\desktop\compiler2.3-当前讨论区bug清除+错误处理\compiler1.0\grammaranalyze.c(283): warning C4716: “GrNoRetFun”: 必须返回一个值
+c:\users\ryan\desktop\compiler2.3-当前讨论区bug清除+错误处理\compiler1.0\grammaranalyze.c(326): warning C4716: “GrRetFun”: 必须返回一个值
+c:\users\ryan\desktop\compiler2.3-当前讨论区bug清除+错误处理\compiler1.0\grammaranalyze.c(361): warning C4716: “GrCompoundStat”: 必须返回一个值
+c:\users\ryan\desktop\compiler2.3-当前讨论区bug清除+错误处理\compiler1.0\grammaranalyze.c(411): warning C4716: “GrMainFun”: 必须返回一个值
+c:\users\ryan\desktop\compiler2.3-当前讨论区bug清除+错误处理\compiler1.0\grammaranalyze.c(1149): warning C4716: “GrCondition”: 必须返回一个值
+c:\users\ryan\desktop\compiler2.3-当前讨论区bug清除+错误处理\compiler1.0\grammaranalyze.c(1237): warning C4716: “grammerAna”: 必须返回一个值
+c:\users\ryan\desktop\compiler2.3-当前讨论区bug清除+错误处理\compiler1.0\grammaranalyze.c(1132): warning C4716: “GrStatement”: 必须返回一个值
+  Compiler1.0.vcxproj -> C:\Users\Ryan\Desktop\Compiler2.3-当前讨论区bug清除+错误处理\Debug\Compiler1.0.exe
+  Compiler1.0.vcxproj -> C:\Users\Ryan\Desktop\Compiler2.3-当前讨论区bug清除+错误处理\Debug\Compiler1.0.pdb (Partial PDB)

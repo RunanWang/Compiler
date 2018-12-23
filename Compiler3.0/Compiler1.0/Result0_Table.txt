@@ -1,0 +1,112 @@
+the main vars
+   _const_int_0     INTSY	         0	0x0	0x0
+   _const_int_1     INTSY	         0	0x0	0x0
+   _const_int_2     INTSY	         0	0x0	0x0
+  _const_char_0    CHARSY	        42	0x0	0x0
+  _const_char_1    CHARSY	        48	0x0	0x0
+            max     INTSY	        48	0x0	0x0
+          error     INTSY	         0	0x0	0x4
+numbers_to_be_selected     INTSY	         0	0x4	0x8
+         amount     INTSY	         0	0x8	0xc
+              f     INTSY	         0	0xc	0xfac
+     _var_int_0     INTSY	         0	0xfac	0xfb0
+ _var_int_arr_0     INTSY	         0	0xfb0	0xfb4
+     _var_int_1     INTSY	         0	0xfb4	0xfb8
+ _var_int_arr_1     INTSY	         0	0xfb8	0xff8
+    _var_char_0    CHARSY	         0	0xff8	0xffc
+_var_char_arr_0    CHARSY	         0	0xffc	0x1000
+    _var_char_1    CHARSY	         0	0x1000	0x1004
+_var_char_arr_1    CHARSY	         0	0x1004	0x1044
+          _char    CHARSY	         0	0x1044	0x1048
+         testdo    VOIDSY	         0	0x1048	0x1048
+ testarithmetic    VOIDSY	         0	0x1048	0x1048
+      testvalue    VOIDSY	         0	0x1048	0x1048
+testcaseinsensitive    VOIDSY	         0	0x1048	0x1048
+     testswitch    VOIDSY	         0	0x1048	0x1048
+         testif    VOIDSY	         0	0x1048	0x1048
+   calrecursive    VOIDSY	         0	0x1048	0x1048
+initpermutation    VOIDSY	         0	0x1048	0x1048
+         seqsum     INTSY	         0	0x1048	0x1048
+     printtable    VOIDSY	         0	0x1048	0x1048
+            and     INTSY	         0	0x1048	0x1048
+       helpchar    CHARSY	         0	0x1048	0x1048
+  typecorrosion    VOIDSY	         0	0x1048	0x1048
+testemptyfunction    VOIDSY	         0	0x1048	0x1048
+  teststructure    VOIDSY	         0	0x1048	0x1048
+           main    MAINSY	         0	0x1048	0x1048
+
+0 testdo
+         testdo    VOIDSY	0	0x0	0x0
+              i     INTSY	0	0x0	0x4
+
+1 testarithmetic
+ testarithmetic    VOIDSY	1	0x0	0x0
+       standard     INTSY	100	0x0	0x4
+            ten     INTSY	10	0x4	0x8
+           temp     INTSY	0	0x8	0xc
+
+2 testvalue
+      testvalue    VOIDSY	2	0x0	0x0
+
+3 testcaseinsensitive
+testcaseinsensitive    VOIDSY	3	0x0	0x0
+           temp     INTSY	0	0x0	0x4
+
+4 testswitch
+     testswitch    VOIDSY	4	0x0	0x0
+              i     INTSY	0	0x0	0x4
+           temp     INTSY	0	0x4	0x8
+
+5 testif
+         testif    VOIDSY	5	0x0	0x0
+
+6 calrecursive
+   calrecursive    VOIDSY	6	0x0	0x0
+    cur_pointer     INTSY	0	0x0	0x4
+            min     INTSY	0	0x4	0x8
+              i     INTSY	0	0x8	0xc
+
+7 initpermutation
+initpermutation    VOIDSY	7	0x0	0x0
+            var     INTSY	0	0x0	0x4
+          lenth     INTSY	0	0x4	0x8
+              i     INTSY	0	0x8	0xc
+
+8 seqsum
+         seqsum     INTSY	8	0x0	0x0
+              i     INTSY	0	0x0	0x4
+
+9 printtable
+     printtable    VOIDSY	9	0x0	0x0
+
+10 and
+            and     INTSY	10	0x0	0x0
+              a     INTSY	0	0x0	0x4
+              b     INTSY	0	0x4	0x8
+
+11 helpchar
+       helpchar    CHARSY	11	0x0	0x0
+           temp    CHARSY	0	0x0	0x4
+
+12 typecorrosion
+  typecorrosion    VOIDSY	12	0x0	0x0
+           temp     INTSY	0	0x0	0x4
+          _char    CHARSY	0	0x4	0x8
+
+13 testemptyfunction
+testemptyfunction    VOIDSY	13	0x0	0x0
+
+14 teststructure
+  teststructure    VOIDSY	14	0x0	0x0
+              a     INTSY	0	0x0	0x4
+              b     INTSY	0	0x4	0x8
+              c    CHARSY	0	0x8	0xc
+              d    CHARSY	0	0xc	0x10
+              e    CHARSY	0	0x10	0x14
+             t1     INTSY	0	0x14	0x18
+             t2     INTSY	0	0x18	0x1c
+
+15 main
+           main    MAINSY	15	0x0	0x0
+         choice    CHARSY	0	0x0	0x4
+         select     INTSY	0	0x4	0x8

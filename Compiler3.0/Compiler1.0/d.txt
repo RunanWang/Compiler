@@ -1,0 +1,198 @@
+const int con_10 = 10, con2_B = 2;
+const char con_sa = 'a', con_la ='A';
+
+int int_a;
+int int_b,int_c[10];
+char char_a;
+char char_B,chAr_c[10];
+
+char upper(char x){
+
+		if(x<123){
+			if(x>96){
+				x=x-con_sa+con_la;
+			}
+			else{printf("Wrong letter!");}
+		}
+		else printf("Wrong Letter!");
+		return (x);
+}
+
+int recursion(int count){
+	int ans;
+	ans=1;
+	if(count>=1){
+		ans=count*recursion(count-1);
+	}
+	else ;
+	return (ans);
+}
+
+int div(int a,int b, int c){
+	return (a/b);
+}
+
+void array{
+	do{
+		int_C[iNt_a]=int_a;
+		int_A=Int_a+1;
+	}while(int_a<con_10)
+	return;
+}
+
+void Check_array{
+	int i;
+	printf("______Check Array______");
+	i=0;
+	do{
+		if(int_c[i]==i){
+			i=i+1;
+			if(i==int_a-1){
+				printf("Array Check passed!");
+			}
+			else{;}
+		}
+		else{
+			printf("Array Error! The num in the array is wrong!");
+			return;
+		}
+	}while(i<int_a)
+	printf("______Array Check Over!______");
+	return;
+}
+
+void check_letter{
+	char x;
+	printf("______Check Letter______");
+	printf("Please enter a uppercase char:");
+	{
+	scanf(x);
+		if(x<=90){
+			if(x>=65){
+				x=x-con_la+con_sa;
+				printf("The uppercase of the char is: ",x);
+			}
+			else{printf("Wrong letter!");}
+		}
+		else{printf("Wrong Letter!");}
+	}
+	printf("Please enter a lowercase char:");
+	scanf(x);
+	x=upper(x);
+	printf("The lowercase of the char is: ",x);
+	printf("Please check if it is correct.");
+	printf("______Letter Check Over!______");
+	return;
+}
+
+void check_recursion{
+	int x,ans1,ans2;
+	ans2=1;
+	printf("______Check Recursion______");
+	printf("Please enter a num:");
+	do{
+		ans2=1;
+		scanf(x);
+		if(x>=15){
+			printf("the num is too large, change a smaller one!");
+		}
+		else{
+			if(x<=0){
+				printf("exit.");
+			}
+			else{
+				ans1=recursion(x);
+				printf("The answer is: ",ans1);
+				do{
+					ans2=ans2*x;
+					x=x-1;
+				}while(x>1)
+				if(ans1==ans2){
+					printf("the correct ans is:"ans2);
+					printf("Recursion is correct!");
+				}
+				else{
+					printf("Error in recursion!");
+				}
+			}
+		}
+	}while(x)
+	printf("______Recursion Check Over!______");
+	return;
+}
+
+void check_common{
+	int tempa,tempb;
+	char op;
+	int ans;
+	printf("______Common Check______");
+	printf("Please enter two num that can be divided: ");
+	scanf(tempa,tempb);
+	ans=div(tempa,tempb);
+	printf("The answer is: ",ans);
+	printf("Please enter an expression that contains only + or * option: ");
+	scanf(tempa);
+	scanf(op);
+	scanf(tempb);
+	switch(op){
+		case '+':{
+			printf("the answer is: ");
+			printf(tempa+tempb);
+		}
+		case '*':{
+			printf("the answer is: ");
+			printf(tempa*tempb);
+		}
+		default:{
+			printf("Wrong op!");
+			return;
+		}
+	}
+	printf("please check the answer!");
+	printf("Please enter a num and we will give you the answer of (x-1)^2: ");
+	scanf(tempa);
+	ans=tempa*tempa-2*tempa+1;
+	printf("The answer is: ",ans);
+	printf("please check the answer!");
+	printf("______Common Check Over!______");
+	return;
+}
+
+void main(){
+	int option;
+	printf("______Check Started_______");
+	printf("1:Array Check");
+	printf("2:Letter Check");
+	printf("3:Recursion Check");
+	printf("4:Common Check");
+	printf("0:Exit");
+	
+	do{
+		printf("Enter The Option You Want To Check:");
+		scanf(option);
+		if(option){
+			switch(option){
+				case 1:{
+					int_a=0;
+					array;
+					check_Array;
+				}
+				case 2:{
+					check_letter;
+				}
+				case 3:{
+					check_recursion;
+				}
+				case 4:{
+					check_common;
+				}
+				default :{
+					printf("Wrong number!");
+				}
+			}
+		}
+		else{
+			printf("______Check Exit.______");
+		}
+	}while(option!=0)
+}

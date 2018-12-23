@@ -1,0 +1,1076 @@
+.data
+error:.space 4
+numbers_to_be_selected:.space 4
+amount:.space 4
+f:.space 4000
+_var_int_0:.space 4
+_var_int_arr_0:.space 4
+_var_int_1:.space 4
+_var_int_arr_1:.space 64
+_var_char_0:.space 4
+_var_char_arr_0:.space 4
+_var_char_1:.space 4
+_var_char_arr_1:.space 64
+_char:.space 4
+str0:.asciiz"Error in Array & Loop Check!\n"
+str1:.asciiz"Array & Loop Check Succeed!\n"
+str2:.asciiz"Error in Array & Loop Check!\n"
+str3:.asciiz"Arithmetic Check Succeed!\n"
+str4:.asciiz"Arithmetic Check Failed!\n"
+str5:.asciiz"Division Check Passed!\n"
+str6:.asciiz"Error in Division Unit!\n"
+str7:.asciiz"Value Assignment Succeed!\n"
+str8:.asciiz"Negative Assignment Failed!\n"
+str9:.asciiz"Positive Assignment Failed!\n"
+str10:.asciiz"Basic Assignment Failed!\n"
+str11:.asciiz"Case Sensitive Detected!\n"
+str12:.asciiz"Case Insensitive Passed!\n"
+str13:.asciiz"Error in testing Case Insensitive!\n"
+str14:.asciiz"Switch Parse Check Succeed!\n"
+str15:.asciiz"Switch Logic Error!\n"
+str16:.asciiz"\\n\n"
+str17:.asciiz"\\n\n"
+str18:.asciiz"If Statement Error!\n"
+str19:.asciiz"Passed If Statement Testing!\n"
+str20:.asciiz"\n"
+str21:.asciiz"INPUT 0: Basic Test        [Arithmetic, Case Inseneitive, Control Flow Logics]\n"
+str22:.asciiz"INPUT 1: Value Type Test   [Char Return, Char Operation, Char Conversion, Escape Char]\n"
+str23:.asciiz"INPUT 2: Structure Test    [Loop, Array, Structures]\n"
+str24:.asciiz"INPUT 3: Recursive Test    [Permutation, Sequential Sum]\n"
+str25:.asciiz"INPUT 4: Exit Program\n"
+str26:.asciiz" \n"
+str27:.asciiz"Structure Check Succeed!\n"
+str28:.asciiz"Error In Register Name!\n"
+str29:.asciiz"The Following Test Should Output 'Hi, 2018'\n"
+str30:.asciiz"This Test Should Output '\\n\\t\\r~!@#$%^&*`' Rather Than Escape Them\n"
+str31:.asciiz"#t1\n"
+str32:.asciiz"$t1\n"
+str33:.asciiz"INPUT P: Permutation Output\n"
+str34:.asciiz"INPUT S: Sequential Sum\n"
+str35:.asciiz"INPUT INT0 INT1: Select INT1 From INT0 To Do Permutation\n"
+str36:.asciiz"\n"
+str37:.asciiz"ERROR!\n"
+str38:.asciiz"INPUT N: Calculate Sum From 1 To N\n"
+str39:.asciiz"Sequential Sum Result is: \n"
+str40:.asciiz"Recursive Check Succeed!\n"
+str41:.asciiz"Error in Recursive Check!\n"
+str42:.asciiz"Illigal Input Detected!\n"
+str43:.asciiz"Illigal Input Detected!\n"
+str44:.asciiz"Critical Error Occurred During Testing...\n"
+str45:.asciiz"Test Passed!\n"
+str46:.asciiz"Test End\n"
+.text
+addi $fp, $sp, 0
+jal funcmain
+li $v0 10
+syscall
+
+functestdo:
+addi $sp, $sp, -4
+addi $sp, $sp, -108
+li $t1, 0
+sw $t1, -0($fp)
+Label0:
+lw $t2, -0($fp)
+sll $v1, $t2, 2
+sw $t2, _var_int_arr_1($v1)
+addi $t3, $t2, 1
+sw $t3, -0($fp)
+li $t4, 15
+ble $t3, $t4, Label0
+li $t5, 0
+sw $t5, -0($fp)
+Label1:
+lw $t6, -0($fp)
+li $t7, 2
+mult $t7, $t6
+mflo $t8
+sub $t9, $t8, $t6
+sll $v1, $t9, 2
+lw $t0, _var_int_arr_1($v1)
+li $t1, 9
+li $t2, 2
+li $t3, 3
+mult $t2, $t3
+mflo $t4
+add $t5, $t1, $t4
+sw $t6, -20($fp)
+lw $t7, -20($fp)
+sub $t6, $t5, $t7
+sll $v1, $t6, 2
+lw $t8, _var_int_arr_1($v1)
+add $t9, $t0, $t8
+sll $v1, $t7, 2
+sw $t9, _var_int_arr_1($v1)
+addi $t0, $t7, 1
+sw $t0, -0($fp)
+li $t1, 15
+ble $t0, $t1, Label1
+li $t2, 1
+sll $v1, $t2, 2
+lw $t3, _var_int_arr_1($v1)
+li $t4, 5
+sll $v1, $t4, 2
+lw $t5, _var_int_arr_1($v1)
+bne $t3, $t5, Label2
+j Label3
+Label2:
+li $v0, 4
+la $a0, str0
+syscall
+li $t6, 1
+sw $t6, error
+Label3:
+li $t7, 15
+sll $v1, $t7, 2
+lw $t8, _var_int_arr_1($v1)
+li $t9, 30
+bne $t8, $t9, Label4
+li $v0, 4
+la $a0, str1
+syscall
+j Label5
+Label4:
+li $v0, 4
+la $a0, str2
+syscall
+li $t0, 1
+sw $t0, error
+Label5:
+jr $ra
+jr $ra
+
+functestarithmetic:
+li $t1, 100
+sw $t1, -0($fp)
+addi $sp, $sp, -4
+li $t1, 10
+sw $t1, -4($fp)
+addi $sp, $sp, -4
+addi $sp, $sp, -4
+addi $sp, $sp, -128
+li $t1, -10
+sub $t2, $0 ,$t1
+li $t3, 10
+sub $t4, $t2, $t3
+lw $t5, -4($fp)
+li $t6, 48
+li $t7, 42
+sub $t8, $t6, $t7
+addi $t9, $t8, 0
+mult $t5, $t9
+mflo $t0
+li $t1, -3
+div $t0, $t1
+mflo $t2
+add $t3, $t4, $t2
+lw $t4, -0($fp)
+sw $t5, -28($fp)
+lw $t6, -28($fp)
+addi $t5, $t6, -3
+li $t7, 1
+sub $t8, $t5, $t7
+addi $t9, $t8, 0
+div $t4, $t9
+mflo $t0
+add $t1, $t3, $t0
+sw $t1, -8($fp)
+lw $t2, -8($fp)
+beq $t2, $0, Label6
+li $v0, 4
+la $a0, str3
+syscall
+j Label7
+Label6:
+lw $a0 -8($fp)
+li $v0, 1
+syscall
+lw $a0 -4($fp)
+li $v0, 1
+syscall
+li $v0, 4
+la $a0, str4
+syscall
+li $t3, 1
+sw $t3, error
+Label7:
+lw $t4, -0($fp)
+li $t5, 1
+li $t6, 15
+mult $t5, $t6
+mflo $t7
+add $t8, $t4, $t7
+addi $t9, $t8, 0
+lw $t0, -4($fp)
+div $t9, $t0
+mflo $t1
+sw $t1, -8($fp)
+lw $t2, -8($fp)
+li $t3, 11
+bne $t2, $t3, Label8
+li $v0, 4
+la $a0, str5
+syscall
+j Label9
+Label8:
+li $v0, 4
+la $a0, str6
+syscall
+li $t4, 1
+sw $t4, error
+Label9:
+jr $ra
+jr $ra
+
+functestvalue:
+addi $sp, $sp, -44
+li $t5, 0
+sub $t6, $0 ,$t5
+sw $t6, _var_int_0
+lw $t7, _var_int_0
+li $t8, 0
+bne $t7, $t8, Label10
+lw $t9, _var_int_0
+li $t0, 1
+bge $t9, $t0, Label11
+lw $t1, _var_int_0
+li $t2, -3
+ble $t1, $t2, Label12
+li $v0, 4
+la $a0, str7
+syscall
+j Label13
+Label12:
+li $v0, 4
+la $a0, str8
+syscall
+li $t3, 1
+sw $t3, error
+Label13:
+j Label14
+Label11:
+li $v0, 4
+la $a0, str9
+syscall
+li $t4, 1
+sw $t4, error
+Label14:
+j Label15
+Label10:
+li $v0, 4
+la $a0, str10
+syscall
+li $t5, 1
+sw $t5, error
+Label15:
+jr $ra
+jr $ra
+
+functestcaseinsensitive:
+addi $sp, $sp, -4
+addi $sp, $sp, -24
+li $t6, 0
+sub $t7, $0 ,$t6
+sw $t7, -0($fp)
+li $t8, 1
+sw $t8, -0($fp)
+lw $t9, -0($fp)
+sw $t9, -16($fp)
+bne $t9, 0, Label16
+li $v0, 4
+la $a0, str11
+syscall
+li $t0, 1
+sw $t0, error
+j Label17
+Label16:
+sw $t9, -16($fp)
+bne $t9, 1, Label18
+li $v0, 4
+la $a0, str12
+syscall
+j Label17
+Label18:
+li $v0, 4
+la $a0, str13
+syscall
+li $t1, 1
+sw $t1, error
+Label17:
+jr $ra
+jr $ra
+
+functestswitch:
+addi $sp, $sp, -4
+lw $t1, 12($fp)
+sw $t1, -0($fp)
+addi $sp, $sp, -52
+lw $t2, -0($fp)
+sw $t2, -4($fp)
+li $t3, 1
+sw $t3, _var_int_1
+lw $t4, -4($fp)
+addi $t5, $t4, -3
+lw $t6, _var_int_1
+li $t7, 1
+mult $t6, $t7
+mflo $t8
+add $t9, $t5, $t8
+sw $t9, -32($fp)
+bne $t9, 1, Label19
+li $v0, 4
+la $a0, str14
+syscall
+j Label20
+Label19:
+li $v0, 4
+la $a0, str15
+syscall
+lw $t0, -4($fp)
+addi $t1, $t0, -3
+lw $t2, _var_int_1
+li $t3, 1
+mult $t2, $t3
+mflo $t4
+add $t5, $t1, $t4
+li $v0, 1
+addi $a0, $t5, 0
+syscall
+li $v0, 4
+la $a0, str16
+syscall
+lw $a0 -0($fp)
+li $v0, 1
+syscall
+li $v0, 4
+la $a0, str17
+syscall
+lw $a0 -4($fp)
+li $v0, 1
+syscall
+li $a0 -3
+li $v0, 1
+syscall
+li $t6, 1
+sw $t6, error
+Label20:
+jr $ra
+jr $ra
+
+functestif:
+addi $sp, $sp, -28
+li $t7, 48
+li $t8, 42
+sub $t9, $t7, $t8
+li $t0, 2
+li $t1, 3
+mult $t0, $t1
+mflo $t2
+beq $t9, $t2, Label21
+li $v0, 4
+la $a0, str18
+syscall
+li $t3, 1
+sw $t3, error
+j Label22
+Label21:
+li $v0, 4
+la $a0, str19
+syscall
+Label22:
+jr $ra
+jr $ra
+
+funccalrecursive:
+addi $sp, $sp, -4
+lw $t1, 16($fp)
+sw $t1, -0($fp)
+lw $t1, 12($fp)
+sw $t1, -4($fp)
+addi $sp, $sp, -116
+lw $t4, -0($fp)
+lw $t5, amount
+bne $t4, $t5, Label23
+li $t6, 0
+sll $v1, $t6, 2
+lw $t7, f($v1)
+li $v0, 11
+addi $a0, $t7, 0
+syscall
+li $t8, 1
+sw $t8, -8($fp)
+lw $t9, -8($fp)
+lw $t0, amount
+bge $t9, $t0, Label24
+Label25:
+lw $t1, -8($fp)
+sll $v1, $t1, 2
+lw $t2, f($v1)
+li $v0, 11
+addi $a0, $t2, 0
+syscall
+addi $t3, $t1, 1
+sw $t3, -8($fp)
+lw $t4, amount
+blt $t3, $t4, Label25
+j Label26
+Label24:
+Label26:
+li $v0, 4
+la $a0, str20
+syscall
+jr $ra
+j Label27
+Label23:
+Label27:
+lw $t5, -4($fp)
+sw $t5, -8($fp)
+lw $t6, -8($fp)
+lw $t7, -0($fp)
+lw $t8, numbers_to_be_selected
+add $t9, $t7, $t8
+lw $t0, amount
+sub $t1, $t9, $t0
+li $t2, 1
+add $t3, $t1, $t2
+bgt $t6, $t3, Label28
+Label29:
+lw $t4, -0($fp)
+lw $t5, -8($fp)
+sll $v1, $t4, 2
+sw $t5, f($v1)
+addi $t6, $t4, 1
+sw $t6, ($sp)
+addi $sp, $sp, -4
+addi $t7, $t5, 1
+sw $t7, ($sp)
+addi $sp, $sp, -4
+sw $ra, ($sp)
+addi $sp $sp -4
+sw $fp, ($sp)
+addi $sp, $sp, -4
+move $fp, $sp
+jal funccalrecursive
+lw $ra, 8($fp)
+move $sp, $fp
+lw $fp, 4($fp)
+addi $sp, $sp, 8
+lw $t8, -8($fp)
+addi $t9, $t8, 1
+sw $t9, -8($fp)
+lw $t0, -0($fp)
+lw $t1, numbers_to_be_selected
+add $t2, $t0, $t1
+lw $t3, amount
+sub $t4, $t2, $t3
+li $t5, 1
+add $t6, $t4, $t5
+ble $t9, $t6, Label29
+j Label30
+Label28:
+Label30:
+jr $ra
+jr $ra
+
+funcinitpermutation:
+addi $sp, $sp, -4
+lw $t1, 16($fp)
+sw $t1, -0($fp)
+lw $t1, 12($fp)
+sw $t1, -4($fp)
+addi $sp, $sp, -16
+li $t7, 0
+sw $t7, -8($fp)
+Label31:
+lw $t8, -8($fp)
+lw $t9, -0($fp)
+sll $v1, $t8, 2
+sw $t9, f($v1)
+addi $t0, $t8, 1
+sw $t0, -8($fp)
+lw $t1, -4($fp)
+ble $t0, $t1, Label31
+jr $ra
+jr $ra
+
+funcseqsum:
+lw $t1, 12($fp)
+sw $t1, -0($fp)
+addi $sp, $sp, -32
+lw $t2, -0($fp)
+li $t3, 1
+bne $t2, $t3, Label32
+li $t4, 1
+addi $a0, $t4, 0
+jr $ra
+j Label33
+Label32:
+lw $t5, -0($fp)
+li $t6, 1
+sub $t7, $t5, $t6
+sw $t7, ($sp)
+addi $sp, $sp, -4
+sw $t5, -16($fp)
+sw $ra, ($sp)
+addi $sp $sp -4
+sw $fp, ($sp)
+addi $sp, $sp, -4
+move $fp, $sp
+jal funcseqsum
+lw $ra, 8($fp)
+move $sp, $fp
+lw $fp, 4($fp)
+addi $sp, $sp, 8
+lw $t5, -16($fp)
+addi $t8, $a0, 0
+add $t9, $t5, $t8
+addi $a0, $t9, 0
+jr $ra
+Label33:
+jr $ra
+
+funcprinttable:
+addi $sp, $sp, -0
+li $v0, 4
+la $a0, str21
+syscall
+li $v0, 4
+la $a0, str22
+syscall
+li $v0, 4
+la $a0, str23
+syscall
+li $v0, 4
+la $a0, str24
+syscall
+li $v0, 4
+la $a0, str25
+syscall
+jr $ra
+jr $ra
+
+funcand:
+lw $t1, 16($fp)
+sw $t1, -0($fp)
+lw $t1, 12($fp)
+sw $t1, -4($fp)
+addi $sp, $sp, -28
+lw $t0, -4($fp)
+li $t1, 4
+bne $t0, $t1, Label34
+li $t2, 0
+addi $a0, $t2, 0
+jr $ra
+j Label35
+Label34:
+lw $t3, -0($fp)
+li $t4, 0
+bne $t3, $t4, Label36
+li $t5, 1
+addi $a0, $t5, 0
+jr $ra
+j Label37
+Label36:
+li $t6, 0
+addi $a0, $t6, 0
+jr $ra
+Label37:
+Label35:
+jr $ra
+
+funchelpchar:
+addi $sp, $sp, -4
+addi $sp, $sp, -8
+li $t7, 48
+sw $t7, -0($fp)
+lw $t8, -0($fp)
+addi $a0, $t8, 0
+jr $ra
+jr $ra
+
+functypecorrosion:
+addi $sp, $sp, -4
+addi $sp, $sp, -4
+addi $sp, $sp, -80
+li $t9, 105
+sw $t9, -4($fp)
+li $t0, 8
+sw $t0, -0($fp)
+li $t1, 72
+li $v0, 11
+addi $a0, $t1, 0
+syscall
+lw $a0 -4($fp)
+li $v0, 11
+syscall
+sw $ra, ($sp)
+addi $sp $sp -4
+sw $fp, ($sp)
+addi $sp, $sp, -4
+move $fp, $sp
+jal funchelpchar
+lw $ra, 8($fp)
+move $sp, $fp
+lw $fp, 4($fp)
+addi $sp, $sp, 8
+addi $t2, $a0, 0
+li $v0, 11
+addi $a0, $t2, 0
+syscall
+li $v0, 4
+la $a0, str26
+syscall
+li $t3, 2
+li $v0, 1
+addi $a0, $t3, 0
+syscall
+li $t4, 2
+li $t5, 1009
+mult $t4, $t5
+mflo $t6
+li $t7, 1
+sub $t8, $t6, $t7
+li $t9, 2017
+sub $t0, $t8, $t9
+li $v0, 1
+addi $a0, $t0, 0
+syscall
+li $t1, 99
+li $t2, 97
+sub $t3, $t1, $t2
+li $t4, 98
+li $t5, 97
+sub $t6, $t4, $t5
+addi $t7, $t6, 0
+sub $t8, $t3, $t7
+li $v0, 1
+addi $a0, $t8, 0
+syscall
+lw $a0 -0($fp)
+li $v0, 1
+syscall
+jr $ra
+jr $ra
+
+functestemptyfunction:
+addi $sp, $sp, -0
+jr $ra
+jr $ra
+
+functeststructure:
+addi $sp, $sp, -4
+addi $sp, $sp, -4
+lw $t1, 28($fp)
+sw $t1, -0($fp)
+lw $t1, 24($fp)
+sw $t1, -4($fp)
+lw $t1, 20($fp)
+sw $t1, -8($fp)
+lw $t1, 16($fp)
+sw $t1, -12($fp)
+lw $t1, 12($fp)
+sw $t1, -16($fp)
+addi $sp, $sp, -56
+lw $t9, -4($fp)
+lw $t1, -12($fp)
+add $t0, $t1, $t9
+lw $t2, -12($fp)
+add $t3, $t0, $t2
+lw $t4, -8($fp)
+sub $t5, $t3, $t4
+lw $t6, -16($fp)
+sub $t7, $t4, $t6
+addi $t8, $t7, 0
+sub $t9, $t5, $t8
+sw $t9, -64($fp)
+bne $t9, 66666, Label38
+li $v0, 4
+la $a0, str27
+syscall
+li $t0, 0
+sw $t0, -20($fp)
+li $t1, 0
+sw $t1, -24($fp)
+j Label39
+Label38:
+sw $t9, -64($fp)
+bne $t9, 0, Label40
+li $v0, 4
+la $a0, str28
+syscall
+li $t2, 1
+sw $t2, error
+j Label39
+Label40:
+li $t3, 1
+sw $t3, error
+Label39:
+jr $ra
+jr $ra
+
+funcmain:
+addi $sp, $sp, -4
+addi $sp, $sp, -4
+addi $sp, $sp, -132
+li $t4, 0
+sw $t4, error
+li $t5, 48
+sw $t5, _char
+Label41:
+sw $ra, ($sp)
+addi $sp $sp -4
+sw $fp, ($sp)
+addi $sp, $sp, -4
+move $fp, $sp
+jal funcprinttable
+lw $ra, 8($fp)
+move $sp, $fp
+lw $fp, 4($fp)
+addi $sp, $sp, 8
+li $v0, 5
+syscall
+sw $v0 -4($fp)
+lw $t6, -28($fp)
+sw $t6, -28($fp)
+bne $t6, 0, Label42
+sw $t6, -28($fp)
+sw $ra, ($sp)
+addi $sp $sp -4
+sw $fp, ($sp)
+addi $sp, $sp, -4
+move $fp, $sp
+jal functestvalue
+lw $ra, 8($fp)
+move $sp, $fp
+lw $fp, 4($fp)
+addi $sp, $sp, 8
+lw $t6, -28($fp)
+sw $t6, -28($fp)
+sw $ra, ($sp)
+addi $sp $sp -4
+sw $fp, ($sp)
+addi $sp, $sp, -4
+move $fp, $sp
+jal functestarithmetic
+lw $ra, 8($fp)
+move $sp, $fp
+lw $fp, 4($fp)
+addi $sp, $sp, 8
+lw $t6, -28($fp)
+sw $t6, -28($fp)
+sw $ra, ($sp)
+addi $sp $sp -4
+sw $fp, ($sp)
+addi $sp, $sp, -4
+move $fp, $sp
+jal functestif
+lw $ra, 8($fp)
+move $sp, $fp
+lw $fp, 4($fp)
+addi $sp, $sp, 8
+lw $t6, -28($fp)
+li $t7, 1
+li $t8, -3
+mult $t7, $t8
+mflo $t9
+sub $t0, $0 ,$t9
+li $v0, 1
+addi $a0, $t0, 0
+syscall
+li $t1, 1
+li $t2, -3
+mult $t1, $t2
+mflo $t3
+sub $t4, $0 ,$t3
+sw $t4, ($sp)
+addi $sp, $sp, -4
+sw $t6, -28($fp)
+sw $ra, ($sp)
+addi $sp $sp -4
+sw $fp, ($sp)
+addi $sp, $sp, -4
+move $fp, $sp
+jal functestswitch
+lw $ra, 8($fp)
+move $sp, $fp
+lw $fp, 4($fp)
+addi $sp, $sp, 8
+lw $t6, -28($fp)
+j Label43
+Label42:
+sw $t6, -28($fp)
+bne $t6, 1, Label44
+li $v0, 4
+la $a0, str29
+syscall
+sw $t6, -28($fp)
+sw $ra, ($sp)
+addi $sp $sp -4
+sw $fp, ($sp)
+addi $sp, $sp, -4
+move $fp, $sp
+jal functypecorrosion
+lw $ra, 8($fp)
+move $sp, $fp
+lw $fp, 4($fp)
+addi $sp, $sp, 8
+lw $t6, -28($fp)
+li $v0, 4
+la $a0, str30
+syscall
+li $v0, 4
+la $a0, str31
+syscall
+li $v0, 4
+la $a0, str32
+syscall
+j Label43
+Label44:
+sw $t6, -28($fp)
+bne $t6, 2, Label45
+li $t5, 49
+sw $t5, _var_char_0
+sw $t6, -28($fp)
+li $t6, 50
+sw $t6, _var_char_1
+li $t7, 12345
+sw $t7, _var_int_0
+li $t8, 54321
+sw $t8, _var_int_1
+sw $ra, ($sp)
+addi $sp $sp -4
+sw $fp, ($sp)
+addi $sp, $sp, -4
+move $fp, $sp
+jal functestdo
+lw $ra, 8($fp)
+move $sp, $fp
+lw $fp, 4($fp)
+addi $sp, $sp, 8
+sw $ra, ($sp)
+addi $sp $sp -4
+sw $fp, ($sp)
+addi $sp, $sp, -4
+move $fp, $sp
+jal functestemptyfunction
+lw $ra, 8($fp)
+move $sp, $fp
+lw $fp, 4($fp)
+addi $sp, $sp, 8
+lw $t9, _var_int_0
+sw $t9, ($sp)
+addi $sp, $sp, -4
+lw $t0, _var_int_1
+sw $t0, ($sp)
+addi $sp, $sp, -4
+lw $t1, _var_char_0
+sw $t1, ($sp)
+addi $sp, $sp, -4
+lw $t2, _var_char_1
+sw $t2, ($sp)
+addi $sp, $sp, -4
+lw $t3, _char
+sw $t3, ($sp)
+addi $sp, $sp, -4
+sw $ra, ($sp)
+addi $sp $sp -4
+sw $fp, ($sp)
+addi $sp, $sp, -4
+move $fp, $sp
+jal functeststructure
+lw $ra, 8($fp)
+move $sp, $fp
+lw $fp, 4($fp)
+addi $sp, $sp, 8
+j Label43
+Label45:
+lw $t4, -28($fp)
+sw $t4, -28($fp)
+bne $t4, 3, Label46
+li $v0, 4
+la $a0, str33
+syscall
+li $v0, 4
+la $a0, str34
+syscall
+li $v0, 12
+syscall
+sw $v0 -0($fp)
+lw $t5, -12($fp)
+sw $t5, -12($fp)
+bne $t5, 80, Label47
+li $v0, 4
+la $a0, str35
+syscall
+li $v0, 5
+syscall
+sw $v0 numbers_to_be_selected
+li $v0, 5
+syscall
+sw $v0 amount
+li $v0, 4
+la $a0, str36
+syscall
+lw $t6, amount
+addi $t7, $t6, 1
+li $t8, 1000
+ble $t7, $t8, Label48
+li $v0, 4
+la $a0, str37
+syscall
+jr $ra
+j Label49
+Label48:
+Label49:
+li $t9, 0
+sw $t9, ($sp)
+addi $sp, $sp, -4
+addi $t0, $t6, 1
+sw $t0, ($sp)
+addi $sp, $sp, -4
+sw $t4, -28($fp)
+sw $t5, -12($fp)
+sw $ra, ($sp)
+addi $sp $sp -4
+sw $fp, ($sp)
+addi $sp, $sp, -4
+move $fp, $sp
+jal funcinitpermutation
+lw $ra, 8($fp)
+move $sp, $fp
+lw $fp, 4($fp)
+addi $sp, $sp, 8
+lw $t4, -28($fp)
+lw $t5, -12($fp)
+li $t1, 0
+sw $t1, ($sp)
+addi $sp, $sp, -4
+li $t2, 1
+sw $t2, ($sp)
+addi $sp, $sp, -4
+sw $t4, -28($fp)
+sw $t5, -12($fp)
+sw $ra, ($sp)
+addi $sp $sp -4
+sw $fp, ($sp)
+addi $sp, $sp, -4
+move $fp, $sp
+jal funccalrecursive
+lw $ra, 8($fp)
+move $sp, $fp
+lw $fp, 4($fp)
+addi $sp, $sp, 8
+lw $t4, -28($fp)
+lw $t5, -12($fp)
+j Label50
+Label47:
+sw $t5, -12($fp)
+bne $t5, 83, Label51
+li $v0, 4
+la $a0, str38
+syscall
+li $v0, 5
+syscall
+sw $v0 -4($fp)
+li $v0, 4
+la $a0, str39
+syscall
+sw $t4, ($sp)
+addi $sp, $sp, -4
+sw $t4, -28($fp)
+sw $ra, ($sp)
+addi $sp $sp -4
+sw $fp, ($sp)
+addi $sp, $sp, -4
+move $fp, $sp
+jal funcseqsum
+lw $ra, 8($fp)
+move $sp, $fp
+lw $fp, 4($fp)
+addi $sp, $sp, 8
+lw $t4, -28($fp)
+addi $t3, $a0, 0
+li $v0, 1
+addi $a0, $t3, 0
+syscall
+sw $t4, -28($fp)
+li $t4, 10
+sw $t4, ($sp)
+addi $sp, $sp, -4
+sw $ra, ($sp)
+addi $sp $sp -4
+sw $fp, ($sp)
+addi $sp, $sp, -4
+move $fp, $sp
+jal funcseqsum
+lw $ra, 8($fp)
+move $sp, $fp
+lw $fp, 4($fp)
+addi $sp, $sp, 8
+addi $t5, $a0, 0
+li $t6, 55
+bne $t5, $t6, Label52
+li $v0, 4
+la $a0, str40
+syscall
+j Label53
+Label52:
+li $t7, 1
+sw $t7, error
+li $v0, 4
+la $a0, str41
+syscall
+Label53:
+li $t8, 3
+sw $t8, -4($fp)
+j Label50
+Label51:
+li $v0, 4
+la $a0, str42
+syscall
+Label50:
+j Label43
+Label46:
+lw $t9, -28($fp)
+sw $t9, -28($fp)
+bne $t9, 4, Label54
+j Label43
+Label54:
+li $v0, 4
+la $a0, str43
+syscall
+Label43:
+lw $t0, error
+sw $t0, ($sp)
+addi $sp, $sp, -4
+sw $t8, ($sp)
+addi $sp, $sp, -4
+sw $t0, -128($fp)
+sw $ra, ($sp)
+addi $sp $sp -4
+sw $fp, ($sp)
+addi $sp, $sp, -4
+move $fp, $sp
+jal funcand
+lw $ra, 8($fp)
+move $sp, $fp
+lw $fp, 4($fp)
+addi $sp, $sp, 8
+lw $t0, -128($fp)
+addi $t1, $a0, 0
+bne $t1, $0, Label41
+li $t2, 1
+blt $t0, $t2, Label55
+li $v0, 4
+la $a0, str44
+syscall
+j Label56
+Label55:
+li $v0, 4
+la $a0, str45
+syscall
+Label56:
+li $v0, 4
+la $a0, str46
+syscall
+jr $ra

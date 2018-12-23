@@ -1,0 +1,829 @@
+
+__BLOCK0__
+void testdo()
+t1=0
+i=t1
+
+__BLOCK1__
+LABEL_0:
+t2=i
+_var_int_arr_1[t2]=t2
+t6=t2+1
+i=t6
+t8=15
+t6<=t8
+BNZ LABEL_0
+
+__BLOCK2__
+t9=0
+i=t9
+
+__BLOCK3__
+LABEL_1:
+t10=i
+t11=2
+t13=t11*t10
+t15=t13-t10
+t16=_var_int_arr_1[t15]
+t17=9
+t18=2
+t19=3
+t20=t18*t19
+t21=t17+t20
+t23=t21-t10
+t24=_var_int_arr_1[t23]
+t25=t16+t24
+_var_int_arr_1[t10]=t25
+t28=t10+1
+i=t28
+t30=15
+t28<=t30
+BNZ LABEL_1
+
+__BLOCK4__
+t31=1
+t32=_var_int_arr_1[t31]
+t33=5
+t34=_var_int_arr_1[t33]
+t32==t34
+BZ LABEL_2
+
+__BLOCK5__
+GOTO LABEL_3
+
+__BLOCK6__
+LABEL_2:
+printf "Error in Array & Loop Check!\n"
+t35=1
+error=t35
+
+__BLOCK7__
+LABEL_3:
+t36=15
+t37=_var_int_arr_1[t36]
+t38=30
+t37==t38
+BZ LABEL_4
+
+__BLOCK8__
+printf "Array & Loop Check Succeed!\n"
+GOTO LABEL_5
+
+__BLOCK9__
+LABEL_4:
+printf "Error in Array & Loop Check!\n"
+t39=1
+error=t39
+
+__BLOCK10__
+LABEL_5:
+ret
+
+
+__BLOCK11__
+void testarithmetic()
+t40=-10
+t41=-t40
+t42=10
+t43=t41-t42
+t44=ten
+t45='0'
+t46='*'
+t47=t45-t46
+t48=t47
+t49=t44*t48
+t50=-3
+t51=t49/t50
+t52=t43+t51
+t53=standard
+t56=t44+-3
+t57=1
+t58=t56-t57
+t59=t58
+t60=t53/t59
+t61=t52+t60
+temp=t61
+t62=temp
+t62>t0
+BZ LABEL_6
+
+__BLOCK12__
+printf "Arithmetic Check Succeed!\n"
+GOTO LABEL_7
+
+__BLOCK13__
+LABEL_6:
+printf "testarithmetic"
+printf "testarithmetic"
+printf "Arithmetic Check Failed!\n"
+t63=1
+error=t63
+
+__BLOCK14__
+LABEL_7:
+t64=standard
+t65=1
+t66=15
+t67=t65*t66
+t68=t64+t67
+t69=t68
+t70=ten
+t71=t69/t70
+temp=t71
+t72=temp
+t73=11
+t72==t73
+BZ LABEL_8
+
+__BLOCK15__
+printf "Division Check Passed!\n"
+GOTO LABEL_9
+
+__BLOCK16__
+LABEL_8:
+printf "Error in Division Unit!\n"
+t74=1
+error=t74
+
+__BLOCK17__
+LABEL_9:
+ret
+
+
+__BLOCK18__
+void testvalue()
+t75=0
+t76=-t75
+_var_int_0=t76
+t77=_var_int_0
+t78=0
+t77==t78
+BZ LABEL_10
+
+__BLOCK19__
+t79=_var_int_0
+t80=1
+t79<t80
+BZ LABEL_11
+
+__BLOCK20__
+t81=_var_int_0
+t82=-3
+t81>t82
+BZ LABEL_12
+
+__BLOCK21__
+printf "Value Assignment Succeed!\n"
+GOTO LABEL_13
+
+__BLOCK22__
+LABEL_12:
+printf "Negative Assignment Failed!\n"
+t83=1
+error=t83
+
+__BLOCK23__
+LABEL_13:
+GOTO LABEL_14
+
+__BLOCK24__
+LABEL_11:
+printf "Positive Assignment Failed!\n"
+t84=1
+error=t84
+
+__BLOCK25__
+LABEL_14:
+GOTO LABEL_15
+
+__BLOCK26__
+LABEL_10:
+printf "Basic Assignment Failed!\n"
+t85=1
+error=t85
+
+__BLOCK27__
+LABEL_15:
+ret
+
+
+__BLOCK28__
+void testcaseinsensitive()
+t86=0
+t87=-t86
+temp=t87
+t88=1
+temp=t88
+t89=temp
+t89==0
+BZ LABEL_16
+
+__BLOCK29__
+printf "Case Sensitive Detected!\n"
+t90=1
+error=t90
+GOTO LABEL_17
+
+__BLOCK30__
+LABEL_16:
+t89==1
+BZ LABEL_18
+
+__BLOCK31__
+printf "Case Insensitive Passed!\n"
+GOTO LABEL_17
+
+__BLOCK32__
+LABEL_18:
+printf "Error in testing Case Insensitive!\n"
+t91=1
+error=t91
+
+__BLOCK33__
+LABEL_17:
+ret
+
+
+__BLOCK34__
+void testswitch()
+t92=i
+temp=t92
+t93=1
+_var_int_1=t93
+t94=temp
+t96=t94+-3
+t97=_var_int_1
+t98=1
+t99=t97*t98
+t100=t96+t99
+t100==1
+BZ LABEL_19
+
+__BLOCK35__
+printf "Switch Parse Check Succeed!\n"
+GOTO LABEL_20
+
+__BLOCK36__
+LABEL_19:
+printf "Switch Logic Error!\n"
+t101=temp
+t103=t101+-3
+t104=_var_int_1
+t105=1
+t106=t104*t105
+t107=t103+t106
+printf "t107"
+printf "\\n\n"
+printf "testswitch"
+printf "\\n\n"
+printf "testswitch"
+printf "_const_int_0"
+t108=1
+error=t108
+
+__BLOCK37__
+LABEL_20:
+ret
+
+
+__BLOCK38__
+void testif()
+t109='0'
+t110='*'
+t111=t109-t110
+t112=2
+t113=3
+t114=t112*t113
+t111!=t114
+BZ LABEL_21
+
+__BLOCK39__
+printf "If Statement Error!\n"
+t115=1
+error=t115
+GOTO LABEL_22
+
+__BLOCK40__
+LABEL_21:
+printf "Passed If Statement Testing!\n"
+
+__BLOCK41__
+LABEL_22:
+ret
+
+
+__BLOCK42__
+void calrecursive()
+t116=cur_pointer
+t117=amount
+t116==t117
+BZ LABEL_23
+
+__BLOCK43__
+t118=0
+t119=f[t118]
+printf "t119"
+t120=1
+i=t120
+t121=i
+t122=amount
+t121<t122
+BZ LABEL_24
+
+__BLOCK44__
+LABEL_25:
+t123=i
+t124=f[t123]
+printf "t124"
+t127=t123+1
+i=t127
+t129=amount
+t127<t129
+BNZ LABEL_25
+
+__BLOCK45__
+GOTO LABEL_26
+
+__BLOCK46__
+LABEL_24:
+
+__BLOCK47__
+LABEL_26:
+printf "\n"
+ret
+GOTO LABEL_27
+
+__BLOCK48__
+LABEL_23:
+
+__BLOCK49__
+LABEL_27:
+t130=min
+i=t130
+t131=i
+t132=cur_pointer
+t133=numbers_to_be_selected
+t134=t132+t133
+t135=amount
+t136=t134-t135
+t137=1
+t138=t136+t137
+t131<=t138
+BZ LABEL_28
+
+__BLOCK50__
+LABEL_29:
+t139=cur_pointer
+t140=i
+f[t139]=t140
+t143=t139+1
+push t143
+t146=t140+1
+push t146
+call calrecursive
+
+__BLOCK51__
+t147=i
+t149=t147+1
+i=t149
+t151=cur_pointer
+t152=numbers_to_be_selected
+t153=t151+t152
+t154=amount
+t155=t153-t154
+t156=1
+t157=t155+t156
+t149<=t157
+BNZ LABEL_29
+
+__BLOCK52__
+GOTO LABEL_30
+
+__BLOCK53__
+LABEL_28:
+
+__BLOCK54__
+LABEL_30:
+ret
+
+
+__BLOCK55__
+void initpermutation()
+t158=0
+i=t158
+
+__BLOCK56__
+LABEL_31:
+t159=i
+t160=var
+f[t159]=t160
+t163=t159+1
+i=t163
+t165=lenth
+t163<=t165
+BNZ LABEL_31
+
+__BLOCK57__
+ret
+
+
+__BLOCK58__
+int seqsum()
+t166=i
+t167=1
+t166==t167
+BZ LABEL_32
+
+__BLOCK59__
+t168=1
+ret t168
+GOTO LABEL_33
+
+__BLOCK60__
+LABEL_32:
+t169=i
+t171=1
+t172=t169-t171
+push t172
+call seqsum
+t173=RET
+
+__BLOCK61__
+t174=t169+t173
+ret t174
+
+__BLOCK62__
+LABEL_33:
+
+
+__BLOCK63__
+void printtable()
+printf "INPUT 0: Basic Test        [Arithmetic, Case Inseneitive, Control Flow Logics]\n"
+printf "INPUT 1: Value Type Test   [Char Return, Char Operation, Char Conversion, Escape Char]\n"
+printf "INPUT 2: Structure Test    [Loop, Array, Structures]\n"
+printf "INPUT 3: Recursive Test    [Permutation, Sequential Sum]\n"
+printf "INPUT 4: Exit Program\n"
+ret
+
+
+__BLOCK64__
+int and()
+t175=b
+t176=4
+t175==t176
+BZ LABEL_34
+
+__BLOCK65__
+t177=0
+ret t177
+GOTO LABEL_35
+
+__BLOCK66__
+LABEL_34:
+t178=a
+t179=0
+t178==t179
+BZ LABEL_36
+
+__BLOCK67__
+t180=1
+ret t180
+GOTO LABEL_37
+
+__BLOCK68__
+LABEL_36:
+t181=0
+ret t181
+
+__BLOCK69__
+LABEL_37:
+
+__BLOCK70__
+LABEL_35:
+
+
+__BLOCK71__
+char helpchar()
+t182='0'
+temp=t182
+t183=temp
+ret t183
+
+
+__BLOCK72__
+void typecorrosion()
+t184='i'
+_char=t184
+t185=8
+temp=t185
+t186='H'
+printf "t186"
+printf "typecorrosion"
+call helpchar
+t187=RET
+
+__BLOCK73__
+printf "t187"
+printf " \n"
+t188=2
+printf "t188"
+t189=2
+t190=1009
+t191=t189*t190
+t192=1
+t193=t191-t192
+t194=2017
+t195=t193-t194
+printf "t195"
+t196='c'
+t197='a'
+t198=t196-t197
+t199='b'
+t200='a'
+t201=t199-t200
+t202=t201
+t203=t198-t202
+printf "t203"
+printf "typecorrosion"
+ret
+
+
+__BLOCK74__
+void testemptyfunction()
+ret
+
+
+__BLOCK75__
+void teststructure()
+t205=b
+t206=t185+t205
+t207=d
+t208=t206+t207
+t209=c
+t210=t208-t209
+t212=e
+t213=t209-t212
+t214=t213
+t215=t210-t214
+t215==66666
+BZ LABEL_38
+
+__BLOCK76__
+printf "Structure Check Succeed!\n"
+t216=0
+t1=t216
+t217=0
+t2=t217
+GOTO LABEL_39
+
+__BLOCK77__
+LABEL_38:
+t215==0
+BZ LABEL_40
+
+__BLOCK78__
+printf "Error In Register Name!\n"
+t218=1
+error=t218
+GOTO LABEL_39
+
+__BLOCK79__
+LABEL_40:
+t219=1
+error=t219
+
+__BLOCK80__
+LABEL_39:
+ret
+
+
+__BLOCK81__
+void main()
+t220=0
+error=t220
+t221='0'
+_char=t221
+
+__BLOCK82__
+LABEL_41:
+call printtable
+
+__BLOCK83__
+scanf "main"
+t205==0
+BZ LABEL_42
+
+__BLOCK84__
+call testvalue
+
+__BLOCK85__
+call testarithmetic
+
+__BLOCK86__
+call testif
+
+__BLOCK87__
+t223=1
+t224=-3
+t225=t223*t224
+t226=-t225
+printf "t226"
+t227=1
+t228=-3
+t229=t227*t228
+t230=-t229
+push t230
+call testswitch
+
+__BLOCK88__
+GOTO LABEL_43
+
+__BLOCK89__
+LABEL_42:
+t205==1
+BZ LABEL_44
+
+__BLOCK90__
+printf "The Following Test Should Output 'Hi, 2018'\n"
+call typecorrosion
+
+__BLOCK91__
+printf "This Test Should Output '\\n\\t\\r~!@#$%^&*`' Rather Than Escape Them\n"
+printf "#t1\n"
+printf "$t1\n"
+GOTO LABEL_43
+
+__BLOCK92__
+LABEL_44:
+t205==2
+BZ LABEL_45
+
+__BLOCK93__
+t231='1'
+_var_char_0=t231
+t232='2'
+_var_char_1=t232
+t233=12345
+_var_int_0=t233
+t234=54321
+_var_int_1=t234
+call testdo
+
+__BLOCK94__
+call testemptyfunction
+
+__BLOCK95__
+t235=_var_int_0
+push t235
+t236=_var_int_1
+push t236
+t237=_var_char_0
+push t237
+t238=_var_char_1
+push t238
+t239=_char
+push t239
+call teststructure
+
+__BLOCK96__
+GOTO LABEL_43
+
+__BLOCK97__
+LABEL_45:
+t205==3
+BZ LABEL_46
+
+__BLOCK98__
+printf "INPUT P: Permutation Output\n"
+printf "INPUT S: Sequential Sum\n"
+scanf "main"
+t185==80
+BZ LABEL_47
+
+__BLOCK99__
+printf "INPUT INT0 INT1: Select INT1 From INT0 To Do Permutation\n"
+scanf "_const_int_0"
+scanf "_const_int_0"
+printf "\n"
+t241=amount
+t243=t241+1
+t244=1000
+t243>t244
+BZ LABEL_48
+
+__BLOCK100__
+printf "ERROR!\n"
+ret
+GOTO LABEL_49
+
+__BLOCK101__
+LABEL_48:
+
+__BLOCK102__
+LABEL_49:
+t245=0
+push t245
+t248=t241+1
+push t248
+call initpermutation
+
+__BLOCK103__
+t249=0
+push t249
+t250=1
+push t250
+call calrecursive
+
+__BLOCK104__
+GOTO LABEL_50
+
+__BLOCK105__
+LABEL_47:
+t185==83
+BZ LABEL_51
+
+__BLOCK106__
+printf "INPUT N: Calculate Sum From 1 To N\n"
+scanf "main"
+printf "Sequential Sum Result is: \n"
+push t205
+call seqsum
+t252=RET
+
+__BLOCK107__
+printf "t252"
+t253=10
+push t253
+call seqsum
+t254=RET
+
+__BLOCK108__
+t255=55
+t254==t255
+BZ LABEL_52
+
+__BLOCK109__
+printf "Recursive Check Succeed!\n"
+GOTO LABEL_53
+
+__BLOCK110__
+LABEL_52:
+t256=1
+error=t256
+printf "Error in Recursive Check!\n"
+
+__BLOCK111__
+LABEL_53:
+t257=3
+select=t257
+GOTO LABEL_50
+
+__BLOCK112__
+LABEL_51:
+printf "Illigal Input Detected!\n"
+
+__BLOCK113__
+LABEL_50:
+GOTO LABEL_43
+
+__BLOCK114__
+LABEL_46:
+t205==4
+BZ LABEL_54
+
+__BLOCK115__
+GOTO LABEL_43
+
+__BLOCK116__
+LABEL_54:
+printf "Illigal Input Detected!\n"
+
+__BLOCK117__
+LABEL_43:
+t258=error
+push t258
+push t257
+call and
+t260=RET
+
+__BLOCK118__
+t260>t0
+BNZ LABEL_41
+
+__BLOCK119__
+t262=1
+t258>=t262
+BZ LABEL_55
+
+__BLOCK120__
+printf "Critical Error Occurred During Testing...\n"
+GOTO LABEL_56
+
+__BLOCK121__
+LABEL_55:
+printf "Test Passed!\n"
+
+__BLOCK122__
+LABEL_56:
+printf "Test End\n"
+
